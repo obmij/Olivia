@@ -1260,4 +1260,54 @@ window.OLIVIA_I18N['en'] = Object.assign(window.OLIVIA_I18N['en'], {
   "room.eternity.zh": "Timeless"
 });
 
+
+/* OLIVIA BISTRO FINAL UI I18N */
+window.OLIVIA_I18N['zh-Hant'] = Object.assign(window.OLIVIA_I18N['zh-Hant'], {
+  "seo.bistro.title": "Olivia Bistro｜以愛為名的餐桌",
+  "seo.bistro.description": "Olivia Bistro 位於宜蘭羅東，為女兒而開的餐廳。所有的一切，都源自於愛，以愛為名 In The Name Of Love。",
+  "bistro.linkAria": "前往 Olivia Bistro 頁面",
+  "bistro.imageAlt": "Olivia Bistro 餐廳空間與餐桌氛圍",
+  "bistro.cardLabel": "Olivia Bistro",
+  "bistro.cardTitle": "為愛而生的餐廳",
+  "bistro.cardBody": "所有的一切，都源自於愛，以愛為名 In The Name Of Love。",
+  "bistro.cardCta": "走進 Olivia Bistro",
+  "bistro.heroLabel": "Olivia Bistro",
+  "bistro.heroTitle": "為愛而生的餐桌",
+  "bistro.heroBody": "為女兒而開的餐廳——所有的一切，都源自於愛，以愛為名 In The Name Of Love。",
+  "bistro.pill1": "In The Name Of Love",
+  "bistro.pill2": "宜蘭羅東",
+  "bistro.pill3": "Bistro",
+  "bistro.carouselKicker": "以愛為名",
+  "bistro.addressLabel": "地址",
+  "bistro.address": "265008 宜蘭縣羅東鎮大同路19號",
+  "bistro.phoneLabel": "電話",
+  "bistro.hoursLabel": "營業時間",
+  "bistro.hours": "週一至週五上午08:30至下午05:00",
+  "bistro.closingLine": "所有的一切，都源自於愛。"
+});
+window.OLIVIA_I18N['en'] = Object.assign(window.OLIVIA_I18N['en'], {
+  "seo.bistro.title": "Olivia Bistro | In The Name Of Love",
+  "seo.bistro.description": "Olivia Bistro in Luodong, Yilan. A restaurant created for a daughter — everything begins with love. In The Name Of Love.",
+  "bistro.linkAria": "Visit the Olivia Bistro page",
+  "bistro.imageAlt": "Olivia Bistro restaurant and dining atmosphere",
+  "bistro.cardLabel": "Olivia Bistro",
+  "bistro.cardTitle": "A bistro born from love",
+  "bistro.cardBody": "Everything begins with love. In The Name Of Love.",
+  "bistro.cardCta": "Enter Olivia Bistro",
+  "bistro.heroLabel": "Olivia Bistro",
+  "bistro.heroTitle": "A table born from love",
+  "bistro.heroBody": "A restaurant created for a daughter — everything begins with love. In The Name Of Love.",
+  "bistro.pill1": "In The Name Of Love",
+  "bistro.pill2": "Luodong, Yilan",
+  "bistro.pill3": "Bistro",
+  "bistro.carouselKicker": "In The Name Of Love",
+  "bistro.addressLabel": "Address",
+  "bistro.address": "No. 19, Datong Rd., Luodong Township, Yilan County 265008, Taiwan",
+  "bistro.phoneLabel": "Phone",
+  "bistro.hoursLabel": "Hours",
+  "bistro.hours": "Monday to Friday, 08:30–17:00",
+  "bistro.closingLine": "Everything begins with love."
+});
+
+
 document.addEventListener('DOMContentLoaded', initConversionSystem);
