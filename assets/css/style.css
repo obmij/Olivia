@@ -240,6 +240,7 @@ p{margin:0}
 .carousel-card.tall{min-height:620px}
 .carousel-card.medium{min-height:460px}
 .carousel-card.short{min-height:380px}
+.carousel-card > .carousel-track{position:absolute;inset:0;height:100%}
 .carousel-track{display:flex;height:100%;transition:transform .9s cubic-bezier(.22,.61,.36,1);will-change:transform}
 .carousel-slide{min-width:100%;height:100%;position:relative;overflow:hidden}
 .carousel-slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.03);transition:transform 8s ease, filter .5s ease}
