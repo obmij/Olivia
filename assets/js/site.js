@@ -309,6 +309,23 @@ function applyRoomEmotionTokens(){
         clearInterval(timer);
         timer = window.setInterval(() => { current = (current + 1) % slides.length; update(); }, interval);
       });
+      let touchStartX = 0;
+      let touchStartY = 0;
+      track.addEventListener('touchstart', (event) => {
+        if (!event.touches || !event.touches.length) return;
+        touchStartX = event.touches[0].clientX;
+        touchStartY = event.touches[0].clientY;
+      }, { passive: true });
+      track.addEventListener('touchend', (event) => {
+        if (!event.changedTouches || !event.changedTouches.length) return;
+        const dx = event.changedTouches[0].clientX - touchStartX;
+        const dy = event.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
+        clearInterval(timer);
+        current = dx < 0 ? (current + 1) % slides.length : (current - 1 + slides.length) % slides.length;
+        update();
+        timer = window.setInterval(() => { current = (current + 1) % slides.length; update(); }, interval);
+      }, { passive: true });
       update();
     });
   }
@@ -1308,6 +1325,5 @@ window.OLIVIA_I18N['en'] = Object.assign(window.OLIVIA_I18N['en'], {
   "bistro.hours": "Monday to Friday, 08:30–17:00",
   "bistro.closingLine": "Everything begins with love."
 });
-
-
 document.addEventListener('DOMContentLoaded', initConversionSystem);
+

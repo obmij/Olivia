@@ -4153,3 +4153,38 @@ h3,
     min-height:460px;
   }
 }
+
+
+/* Olivia image update: keep original layout, add only spacing for inserted sections */
+.private-kitchen-section{
+  margin-top:var(--space-xl);
+  margin-bottom:var(--space-xl);
+}
+.emotion-stair .room-hero-frame,
+.emotion-stair .support-frame{
+  border-color:rgba(186,142,126,.22);
+}
+@media (max-width:720px){
+  .private-kitchen-section{margin-top:var(--space-lg);margin-bottom:var(--space-lg);}
+}
+
+/* Fix Private Kitchen carousel card fill: 5 slides only, no empty gray area */
+.private-kitchen-section .carousel-card.medium{
+  min-height:0;
+  height:clamp(320px,52vw,540px);
+}
+.private-kitchen-section .carousel-track,
+.private-kitchen-section .carousel-slide{
+  height:100%;
+}
+.private-kitchen-section .carousel-slide img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+@media (max-width:720px){
+  .private-kitchen-section .carousel-card.medium{
+    height:360px;
+  }
+}
